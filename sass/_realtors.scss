@@ -1,0 +1,48 @@
+.realtors {
+    background-color: $color-secondary; 
+    grid-column: col-start 7 / full-end;
+    padding: 3rem;
+    display: grid;
+
+    grid-row-gap: 3rem;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }   
+
+
+    &__list {
+        display: grid;
+
+        grid-template-columns: 7rem max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 5vh;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, 7rem max-content);
+        } 
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns:  7rem max-content;
+        }  
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 50%;
+        display: block;
+    }
+
+    &__details {
+        align-self: center;
+    }
+
+    &__sold {
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+        margin-top: -3px;
+    }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/aslogo.jpg">
+
+
+    <title>Contact Us&mdash;AS Group</title>
+    <style>
+      body{
+ font-family: sans-serif;
+ margin: 20px 40px;
+}
+#mainbox{
+ font-size: 40px;
+ cursor: pointer;
+ transition: all .6s;
+}
+.sidemenu{
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 0px;
+ background-color: #222;
+ z-index: 1;
+ padding-top: 100px;
+ overflow-x: hidden;
+ transition: all .5s;
+}
+.sidemenu a{
+ padding: 8px 8px 8px 64px;
+ text-decoration: none;
+ font-size: 20px;
+ color: #999;
+ display: block;
+}
+.sidemenu a:hover{
+  color: white;
+}
+.sidemenu .closebtn{
+ position: absolute;
+ top: 0px;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 32px;
+}
+.sidebar {
+  background-color: #d16537;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 62.5em) {
+    .sidebar {
+      grid-row: 1 / 2;
+      grid-column: 1 / -1;
+      justify-content: flex-end;
+      align-items: center; } }
+
+      /* The Modal (background) */
+.popmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.popmodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.popclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popclose:hover,
+.popclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+
+<body class="container">
+    <div class="sidebar">
+    <!-- <button class="nav-btn"></button> -->
+         <div id="mainbox" onclick="openFunction()" style="margin-right: 89%;">&#9776;</div>
+  <div id="menu" class="sidemenu">
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="serv.html">Service</a>
+   <a href="contact.html">Contact</a>
+   <a href="register.php">Registration</a>
+   <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+     </div>
+    </div>
+    <script type="text/javascript">
+ function openFunction(){
+  document.getElementById("menu").style.width="300px";
+  document.getElementById("mainbox").style.marginLeft="300px";
+  document.getElementById("mainbox").innerHTML="";
+ }
+function closeFunction(){
+ document.getElementById("menu").style.width="0px";
+ document.getElementById("mainbox").style.marginLeft="0px";
+ document.getElementById("mainbox").innerHTML="&#9776; ";
+}
+document.querySelector('.close').addEventListener('click',
+function(){
+document.querySelector('.popUpMain').style.display='none';  
+});
+</script> 
+
+            <div id="mypopModal" class="popmodal" style="z-index : 1">
+
+  <!-- Modal content -->
+  <div class="popmodal-content" style="text-align: center">
+    <span class="popclose">&times;</span>
+    <h3>Select Your City</h3>
+    <div class="row ">
+        <div class="text-center">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <a href="alibag.html">
+                    <div class="thumbnail" style='height: 213px ; width: 328px; background-image: url("./img/alibag1.jpg")'>
+                        <button style="background: white; color: #957254;" class="btn ">Alibag</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <a href="pune.html">
+                    <div class="thumbnail" style='height: 213px ; width: 328px; background-image: url("./img/pun1.jpg")'>
+                        <button style="background: white; color: #957254;" class="btn ">Pune</button>
+                    </div>
+                </a>
+            </div>
+           
+            
+            
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // jquery//
+// Get the modal
+var popmodal = document.getElementById('mypopModal');
+
+// Get the button that opens the popmodal
+
+// Get the <span> element that closes the popmodal
+var span = document.getElementsByClassName("popclose")[0];
+
+
+
+// When the user clicks on <span> (x), close the popmodal
+span.onclick = function() {
+    popmodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the popmodal, close it
+window.onclick = function(event) {
+    if (event.target == popmodal) {
+        popmodal.style.display = "none";
+    }
+    
+  
+}
+function showpopModal(){
+  popmodal.style.display = "block";
+  }
+</script>
+
+    <body onload="showpopModal();">
+
+
+
+
+   
+        <!-- contact section -->
+         <section id="contact-section">
+           <div class="container">
+             <h2>Contact Us</h2>
+              <p>Email us and keep upto date with our latest news</p>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+               <div>
+                 <i class="fa fa-map-marker"></i><<a href="https://goo.gl/maps/NW4hdKwX7yB1cyZx8" style="color:white;" >Alibag,Raigad 402201</a><br>
+                 <i class="fa fa-phone" > </i><a href="tel: +91 8552880976" style="color:white;">+91 8552880976<br></a>
+                 <i class="fa fa-envelope"></i><a href="mailto:sushankhole29feb@gmail.com" style="color:white;">sushankhole29feb@gmail.com</a>
+               </div>
+               
+                   <!-- second grid -->
+           <div>        
+             
+              <form action="connect.php" method="post">
+               <input type="text" placeholder="Your Name"  id="firstname"  onkeyup="showHint(this.value)" name="firstName"required>
+               <p>Suggestions: <span id="txtHint"></span></p> 
+               <input type="text" placeholder="Last Name" id="lastName"  name="lastName"required><br>
+               <input type="Email" placeholder="Email" id="email"  name="email"required><br>
+               <input type="number" placeholder="Your contact number" id="number"  name="number" required><br>
+               <textarea name="message" placeholder="Message" rows="5" id="message"  name="message"required></textarea><br>
+               <button class="submit" >Send Message</button> 
+             </form>   
+               </div>
+             </div>
+           </div>
+         </section>
+         <script>
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "gethint.php?q="+str, true);
+  xhttp.send();   
+}
+</script>
+           
+
+ </body>
+ </html>   

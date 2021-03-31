@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/aslogo.jpg">
+
+
+    <title>Service &mdash;AS Group</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body, html{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+
+}
+.title{
+  width: 180px;
+  background: #130f40;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 3px;
+}
+.first, .second, .third{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.first{
+  min-height: 80%;
+  height: auto;
+  background-image: url(./img/serban.jpg);
+}
+.second{
+  min-height: 50%;
+  background-image: url(./img/serbn.jpg);
+}
+.third{
+  min-height: 50%;
+  background-image: url(./img/ban3.jpg);
+}
+.section{
+  padding: 20px;
+  text-align: justify;
+  color: #000;
+   background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);}
+body{
+ font-family: sans-serif;
+ margin: 20px 40px;
+}
+#mainbox{
+ font-size: 40px;
+ cursor: pointer;
+ transition: all .6s;
+}
+.sidemenu{
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 0px;
+ background-color: #222;
+ z-index: 1;
+ padding-top: 100px;
+ overflow-x: hidden;
+ transition: all .5s;
+}
+.sidemenu a{
+ padding: 8px 8px 8px 64px;
+ text-decoration: none;
+ font-size: 20px;
+ color: #999;
+ display: block;
+}
+.sidemenu a:hover{
+  color: white;
+}
+.sidemenu .closebtn{
+ position: absolute;
+ top: 0px;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 32px;
+}
+.sidebar {
+  background-color: #d16537;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 62.5em) {
+    .sidebar {
+      grid-row: 1 / 2;
+      grid-column: 1 / -1;
+      justify-content: flex-end;
+      align-items: center; } }
+
+
+    </style>
+  </head>
+  <body>
+
+    <body class="container">
+    <div class="sidebar">
+    <!-- <button class="nav-btn"></button> -->
+         <div id="mainbox" onclick="openFunction()" style="margin-right: 89%;">&#9776;</div>
+  <div id="menu" class="sidemenu">
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="serv.html">service</a>
+   <a href="contact.html">Contact</a>
+   <a href="register.php">Registration</a>
+   <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+     </div>
+    </div>
+    <script type="text/javascript">
+ function openFunction(){
+  document.getElementById("menu").style.width="300px";
+  document.getElementById("mainbox").style.marginLeft="300px";
+  document.getElementById("mainbox").innerHTML="";
+ }
+function closeFunction(){
+ document.getElementById("menu").style.width="0px";
+ document.getElementById("mainbox").style.marginLeft="0px";
+ document.getElementById("mainbox").innerHTML="&#9776; ";
+}
+document.querySelector('.close').addEventListener('click',
+function(){
+document.querySelector('.popUpMain').style.display='none';  
+});
+</script> 
+  <div class="first">
+    <div class="title">
+      Service
+    </div>
+  </div>
+    <div class="section">
+      <h4 class="heading-4 heading-4--dark">Customers</h4>
+      <ul class="work">
+          <li>We offer a self-ride bike rental service to our customers. Our bike riding program is exclusively designed for those who want to gain experience of riding different motorbikes.</li>
+<li>You can choose from our pool of well-maintained motorbikes and register your details with us online.</li>
+<li>Reserve your favorite bike today and additionally gain more benefits. We provide all the significant details associated with bikes to our customers.</li>
+<li>We offer quality vehicles and cost-effective solutions which help us stay ahead of the competitive race.</li>
+<li>The company has been delivering outstanding results and has won positive feedback from customers. </li></ul>
+    </div>
+    <div class="second">
+
+    </div>
+      <div class="section" style=" color: #fff;
+    background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);">
+        <h4 class="heading-4 heading-4--dark">Benefits For Customers</h4>
+        <ul class="work">
+            <li> We have distinctly listed all the bikes with their specifications which makes it easy to compare for the best prices and best deals.</li>
+<li>You can choose from our pool of well-maintained motorbikes and register your details with us online.</li>
+<li>Reserve your favorite bike today and additionally gain more benefits. We provide all the significant details associated with bikes to our customers.</li>
+<li>We offer quality vehicles and cost-effective solutions which help us stay ahead of the competitive race.</li>
+<li>The company has been delivering outstanding results and has won positive feedback from customers. </li></ul>
+      </div>
+      <div class="third">
+
+      </div>
+        <div class="section" style=" background: -webkit-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  background: -o-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  background: -moz-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  background: linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);">
+          <h4 class="heading-4 heading-4--dark">Dealers</h4>
+          <ul class="work">
+              <li>  Dealers who are willing to lend their motorbikes on rent can immediately contact us. We help you get qualified leads based on customer demand and requirements.</li>
+<li> We ensure that you receive fair rental prices on your bikes. You can create your account by following this link Register Now.</li>
+<li> Once your account gets approved by our admin, your wide collection of motorbikes will be attractively displayed on our website with its price listings.</li>
+<li>We offer powerful tools to market and create awareness about your bikes on our website.</li>
+<li>We make the process simple for our dealers by providing premium online services. Our Efficient online system offers all that you need to succeed. </li></ul>
+        </div>
+        <div class="section" style=" background: -webkit-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background: -o-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background: -moz-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);">
+          <h4 class="heading-4 heading-4--dark">Benefits For Dealers</h4>
+          <ul class="work">
+              <li>  Dealers can enjoy plenty of benefits by collaborating with us. We provide unbeatable service and numerous other benefits to our dealers.</li>
+<li>  We instantly send you all the customer booking details, make your payments within a week, you can manage your inventory yourself, and a lot other related offers.</li>
+<li>  We provide extensive benefits that enable you to get directly connected and personally deal with the customer.</li></ul>
+        </div>
+        
+  </body>
+</html>

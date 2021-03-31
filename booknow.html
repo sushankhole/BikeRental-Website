@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/aslogo.jpg">
+
+
+    <title>Booknow&mdash;AS Group</title>
+
+</head>
+<body>
+  <!-- contact section -->
+         <section id="contact-section">
+           <div class="container">
+             <h2>Book Now Your Bike</h2>
+              <p>RIDE UNLIMITED, FOR A FIXED PRICE</p>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+              <!--  <div>
+                 <i class="fa fa-map-marker"></i><<a href="https://goo.gl/maps/NW4hdKwX7yB1cyZx8" style="color:white;" >Alibag,Raigad 402201</a><br>
+                 <i class="fa fa-phone" > </i><a href="tel: +91 8552880976" style="color:white;">+91 8552880976<br></a>
+                 <i class="fa fa-envelope"></i><a href="mailto:sushankhole29feb@gmail.com" style="color:white;">sushankhole29feb@gmail.com</a>
+               </div> -->
+               
+                   <!-- second grid -->
+           <div>        
+             
+              <form action="bcon.php" method="post">
+               <input type="text" placeholder="Your Name"  id="firstname" name="firstName"required>
+               <input type="text" placeholder="Last Name" id="lastName"  name="lastName"required><br>
+               <input type="Email" placeholder="Email" id="email"  name="email"required><br>
+               <input type="number" placeholder="Your contact number" id="number"  name="number"required><br>
+               <p style="text-align:-webkit-left;">Pick Up Date</p>
+               <input type="date" id="myDate" name="myDate" min="2020-11-11" max="2021-12-12"required>
+                <p style="text-align:-webkit-left;">Drop Off Date</p>
+               <input type="date" id="mylDate" name="mylDate" min="2020-11-11" max="2021-12-12"required>
+                <input type="city" placeholder="city" id="city"  name="city"required><br>
+               <button class="submit" >Send Message</button> 
+             </form>   
+               </div>
+             </div>
+           </div>
+         </section>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myDate").min;
+  document.getElementById("demo").innerHTML = x;
+}
+function myFunction() {
+  var x = document.getElementById("mylDate").min;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+  </body>
+  </html>
